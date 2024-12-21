@@ -1,0 +1,70 @@
+/* General container */
+.home-container {
+  background-color: #91b3c7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #000;
+}
+
+/* Header styling */
+.home-header {
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  color: rgb(105, 124, 161);
+  text-align: center;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+/* Navbar in the header */
+.home-nav {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: white;
+  background-color: #5c6b73;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #7a8b96;
+}
+
+/* Main content */
+.home-content {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.home-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+
+
+
+.image-container img {
+  max-width: 200px; /* Adjust the size of the image */
+  height: auto;
+}

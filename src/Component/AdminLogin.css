@@ -1,0 +1,76 @@
+.admin-container {
+    background-color: #91b3c7;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .admin-header {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header-buttons {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-buttons .btn {
+    background-color: #3b4a59;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .header-buttons .btn:hover {
+    background-color: #2e3945;
+  }
+  
+  .admin-content {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+  }
+  
+  form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn.login-btn {
+    background-color: #3b4a59;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn.login-btn:hover {
+    background-color: #2e3945;
+  }
+  
+  .error {
+    color: red;
+    font-size: 0.9rem;
+  }
+  

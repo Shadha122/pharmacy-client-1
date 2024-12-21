@@ -1,0 +1,50 @@
+.login-container,
+.signup-container {
+  background-color: #91b3c7;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header,
+.signup-header {
+  width: 100%;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+}
+
+.success {
+  color: green;
+}
+
+.btn {
+  padding: 10px;
+  background-color: #3b4a59;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #2e3945;
+}
