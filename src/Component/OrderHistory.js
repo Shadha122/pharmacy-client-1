@@ -14,7 +14,7 @@ const OrderHistory = () => {
       }
 
       try {
-        const response = await fetch(`http://localhost:5000/orders/${userId}`);
+        const response = await fetch(`https://pharmacy-server-new.onrender.com/orders/${userId}`);
         if (response.ok) {
           const data = await response.json();
           setOrders(data);
