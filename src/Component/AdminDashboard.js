@@ -19,7 +19,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://localhost:5000/products');
+        const response = await fetch('https://pharmacy-server-new.onrender.com/products');
         const data = await response.json();
         setProducts(data);
       } catch (err) {
@@ -37,7 +37,7 @@ const AdminDashboard = () => {
     try {
       if (editingProduct) {
         // Update product
-        const response = await fetch(`http://localhost:5000/products/${editingProduct._id}`, {
+        const response = await fetch(`https://pharmacy-server-new.onrender.com/products/${editingProduct._id}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(newProduct),
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
         }
       } else {
         // Add new product
-        const response = await fetch('http://localhost:5000/products', {
+        const response = await fetch('https://pharmacy-server-new.onrender.com/products', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(newProduct),
@@ -105,7 +105,7 @@ const AdminDashboard = () => {
   // Handle deleting a product
   const handleDeleteProduct = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/products/${id}`, {
+      const response = await fetch(`https://pharmacy-server-new.onrender.com/products/${id}`, {
         method: 'DELETE',
       });
 
